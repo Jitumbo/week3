@@ -15,6 +15,15 @@
     
 }
 
+.mouseClick{
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    bottom: 5px;
+
+  }
 .serviceText{
     padding: 10px 0;
     margin-left: auto;
