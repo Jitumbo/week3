@@ -4,6 +4,7 @@
         
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <link href="css/styles.css" rel="stylesheet" type="text/css">
+        
 
     </head>
     <body>
@@ -38,19 +39,40 @@
         
         <div class="row" name="whatWeDo" id="whatWeDoNo" >
             
-            <div class="col-md-4">
+            <div class="col-md-4" id="toggleDesign">
+              
+              <div class="showPictureDes">
                 <img src="assets/services_icons/design_icon.png" id="design-icon" ">
                 <p style="text-align:left">DESIGN</p>
+              </div>
+              <div class="showTextDes" >
+                <p class="pWhatWedo" id="showTextDesign">Our design practice offers a full range of services including brand strategy, interaction and visual design and user experience testing.
+                    Throughout your project, our designers create and implement visual design and workflows, solicit user feedback and work with you to make sure what gets built is what is needed.</p>
+              </div>
+
+           
 
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4" id="toggleDev">
+              <div class="showPictureDev">    
                 <img src="assets/services_icons/dev_icon.png" id="development-icon">
                 <p style="text-align:left">DEVELOPMENT</p>
+              </div> 
+              <div class="showTextDev">
+                <p class="pWhatWedo" id="showTextDev">All engineers are fluent in the latest enterprise, mobile and web development technologies.
+                    They collaborate with your team to write, and improve code on a daily basis, using proven practices such as test-driven development and pair programming.</p>
+              </div> 
                 
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4" id="togglePM">
+              <div class="showPicturePM">
                 <img src="assets/services_icons/product_icon.png" id="product-icon" >
                 <p style="text-align:left">PRODUCT MANAGEMENT</p>
+              </div>
+              <div class="showText">
+                <p class="pWhatWedo" id="showTextPM">Planning and development is iterative. Because we are constantly coding and testing, the products we build are always ready to go live. 
+                    This iterative process allows for changes as business requirements evolve.</p>
+              </div>
                 
             </div>
         </div>
@@ -99,11 +121,17 @@
         </div>
       </div>  
       <div class="form" id="frmContactUs">
+
+        <div class="formText" id="fmText">
         <h2>CONTACT US</h2>
         <input type="text"  id="frmName" placeholder="Name.." >
         <input type="text" id="frmEmail" placeholder="Email.." ><br>
-        <textarea id="message" class="msgTextArea" rows="4" cols="50">Your message here....</textarea>
+        <textarea id="message" class="msgTextArea" rows="8" cols="60">Your message here....</textarea>
+    </div>
 
       </div>
+
+      <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+      <script src="js/scripts.js"></script>  
     </body>
 </html>
