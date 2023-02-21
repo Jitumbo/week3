@@ -59,16 +59,17 @@ $(document).ready(()=>{
     });
     
     
-    $("form#frmContactUs").submit(function(event){
+    $("#frmContactUs").submit(()=>{
         
         var name = $("input#frmName").val();
         var email = $("input#frmEmail").val();
         var message = $("textarea#message").val();
-        if ($("input#frmName").val() && $("input#frmEmail").val()){
-          alert (name + ", we have received your message. Thank you for reaching out to us.");
+        if (name === "" || email ===""){
+            alert("Please enter your name and email!");
+          
         }
         else {
-          alert("Please enter your name and email!");
+            alert (name + ", we have received your message. Thank you for reaching out to us.");
         }
         
       });

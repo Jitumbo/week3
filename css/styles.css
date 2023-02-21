@@ -108,14 +108,20 @@ body{
     
     
   }
+  #submit{
 
-  #portfolioImageContainer1,#portfolioImageContainer2,#portfolioImageContainer3,#portfolioImageContainer4,#portfolioImageContainer5,
-  #portfolioImageContainer6,#portfolioImageContainer7,#portfolioImageContainer8 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+
+  }
+
+  #portfolioImageContainer1,#portfolioImageContainer2,#portfolioImageContainer3,#portfolioImageContainer4,#portfolioImageContainer5,#portfolioImageContainer6,#portfolioImageContainer7,#portfolioImageContainer8
+   {
     position: relative;
-    
-    
-	
-	color: #333;
+    color: #333;
   }
 
  

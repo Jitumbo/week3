@@ -147,6 +147,7 @@
         </div>
       </div>  
       <div class="form" id="frmContactUs">
+        <form>
 
         <div class="formText" id="fmText">
         <h2>CONTACT US</h2>
@@ -155,7 +156,8 @@
         <textarea id="message" class="msgTextArea" rows="8" cols="60">Your message here....</textarea>
     </div>
     <br>
-    <button type="submit" class="btn btn-primary col-md-1">Submit</button>
+    <button type="submit" id="submit" onclick="submitForm(this.form)">Submit</button>
+     </form>
 
       </div>
 
